@@ -1,16 +1,31 @@
-let computerMove = `stone`;
-printMessage('I played a' + computerMove + 'If your move is paper, you win!');
+let randomNumber = Math.floor(Math.random() * 3 + 1);
 
-let playerMove = `paper`;
+console.log('The random number is: ' + randomNumber);
 
-let randomFraction = Math.random();
+let computerMove = 'unknown move';
 
-printMessage('The fraction drawn is: ' + randomFraction);
+if(randomNumber == 1){
+   computerMove = 'stone';
+} else if(randomNumber == 2){
+   computerMove = 'paper';
+} else(randomNumber == 3){
+   computerMove = 'scissors';
+}
 
-let calculation = randomFraction * 3 + 1;
+printMessage('My move is: ' + computerMove);
 
-printMessage('A fraction multiplied by 3 and increased by 1: ' + calculation);
+let playerInput = prompt('Choose your move! 1: stone, 2: paper, 3: scissors.');
 
-let roundNumber = Math.floor(calculation);
+console.log('The player typed: ' + playerInput);
 
-printMessage('The number after rounding down is: ' + roundNumber);
+let playerMove = 'unknown move';
+
+if(playerInput == '1'){
+   playerMove = 'stone';
+} else if(randomNumber == 2){
+   playerMove = 'paper';
+} else(randomNumber == 3){
+   playerMove = 'scissors';
+}
+
+printMessage('Your move is: ' + playerMove);
