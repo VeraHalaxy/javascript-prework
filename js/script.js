@@ -22,10 +22,32 @@ let playerMove = 'unknown move';
 
 if(playerInput == '1'){
    playerMove = 'stone';
-} else if(randomNumber == 2){
+} else if(randomNumber == '2'){
    playerMove = 'paper';
-} else(randomNumber == 3){
+} else(randomNumber == '3'){
    playerMove = 'scissors';
 }
 
 printMessage('Your move is: ' + playerMove);
+
+if( computerMove == 'stone' && playerMove == 'paper'){
+   printMessage('You win!');
+} else if( computerMove == 'parer' && playerMove == 'scissors'){
+   printMessage('You win!');
+} else if( computerMove == 'scissors' && playerMove == 'stone'){
+   printMessage('You win!');
+} else if( computerMove == 'stone' && playerMove == 'stone'){
+   printMessage('Dead Heat');
+} else if( computerMove == 'scissors' && playerMove == 'scissors'){
+   printMessage('Dead Heat');
+} else if( computerMove == 'paper' && playerMove == 'paper'){
+   printMessage('Dead Heat');
+} else if( computerMove == 'paper' && playerMove == 'stone'){
+   printMessage('You lose!');
+} else if( computerMove == 'scissors' && playerMove == 'paper'){
+   printMessage('You lose!');
+} else if( computerMove == 'stone' && playerMove == 'scissors'){
+   printMessage('You lose!');
+} else {
+   printMessage('Unknown Move');
+}
