@@ -50,7 +50,7 @@ let computerMove = getMoveName(randomNumber);
    computerMove = 'scissors';
 }*/
 
-//printMessage('My move is: ' + computerMove);
+printMessage('My move is: ' + computerMove);
 
 let playerInput = prompt('Choose your move! 1: stone, 2: paper, 3: scissors.');
 
@@ -66,9 +66,9 @@ let playerMove = getMoveName(randomNumber);
    playerMove = 'scissors';
 }*/
 
-/*printMessage('Your move is: ' + playerMove);
+printMessage('Your move is: ' + playerMove);
 
-if( computerMove == 'stone' && playerMove == 'paper'){
+/*if( computerMove == 'stone' && playerMove == 'paper'){
    printMessage('You win!');
 } else if( computerMove == 'parer' && playerMove == 'scissors'){
    printMessage('You win!');
