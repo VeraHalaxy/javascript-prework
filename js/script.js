@@ -5,9 +5,10 @@ function playGame(playerInput){
    let randomNumber = Math.floor(Math.random() * 3 + 1);
    console.log('The random number is: ' + randomNumber);
 
-   let computerMove = getMoveName(randomNumber);
+   const computerMove = getMoveName(randomNumber);
 
-   let playerMove = getMoveName(playerInput);
+   const playerMove = getMoveName(playerInput);
+   console.log('Your is: ' + playerMove);
    printMessage('Your move is: ' + playerMove);
 
    function getMoveName(argMoveId){
