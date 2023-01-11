@@ -2,13 +2,13 @@ function playGame(playerInput){
 
    clearMessages();
 
-   let randomNumber = Math.floor(Math.random() * 3 + 1);
+   const randomNumber = Math.floor(Math.random() * 3 + 1);
    console.log('The random number is: ' + randomNumber);
 
    const computerMove = getMoveName(randomNumber);
 
    const playerMove = getMoveName(playerInput);
-   console.log('Your is: ' + playerMove);
+   console.log('Your move is: ' + playerMove);
    printMessage('Your move is: ' + playerMove);
 
    function getMoveName(argMoveId){
